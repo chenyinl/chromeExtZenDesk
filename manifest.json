@@ -1,0 +1,14 @@
+{
+    "name": "Chen Zendesk Ext",
+    "version": "1.0",
+    "description": "zendesk order pull",
+    "background" : {
+      "scripts" : ["background.js"]
+    },
+    "manifest_version": 2,
+    "content_scripts": [{
+     
+      "js": ["background.js"],
+      "matches": ["https://YOURZENDOMAIN.zendesk.com/agent/dashboard"]
+    }]
+  }
